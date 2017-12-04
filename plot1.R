@@ -46,11 +46,11 @@ hpc<-rbind(first,second)
 
 
 ##plot1.png
-with(hpc, hist(Global_active_power, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)"))
+with(hpc, hist(Global_active_power/1000, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)"))
 dev.off()
 
 ##plot1 to .png
 dev.cur()
 png(file="plot1.png")
-with(hpc, hist(Global_active_power, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)"))
+with(hpc, hist(Global_active_power/1000, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)"))
 dev.off()
